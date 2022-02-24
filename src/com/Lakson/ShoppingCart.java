@@ -22,10 +22,6 @@ public class ShoppingCart {
         total = total + item.price;
     }
 
-    public List getShoppingCart() {
-        return this.itemsInCart;
-    }
-
     public double getTotal() {
         return this.total;
     }

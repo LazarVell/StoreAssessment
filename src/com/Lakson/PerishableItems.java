@@ -31,10 +31,11 @@ public class PerishableItems extends Item{
     public double getPrice() {
         return price;
     }
-
+    /*
+    //ExpirationDate is not needed for the receipt, but if we needed it we could use this getter.
     public String getExpirationDate() {
         return expirationDate;
-    }
+    }*/
 
     public void addQuantity ( double quantity) {
         this.quantity = quantity;

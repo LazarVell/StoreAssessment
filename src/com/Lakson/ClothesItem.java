@@ -1,8 +1,5 @@
 package com.Lakson;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
 public class ClothesItem extends Item {
@@ -34,13 +31,15 @@ public class ClothesItem extends Item {
         return price;
     }
 
+    /*
+    // getSize and getColor are not needed for this exercise, but we would use them if we needed to print out color and size.
     public String getSize() {
         return size;
     }
 
     public String getColor() {
         return color;
-    }
+    }*/
 
     public void addQuantity ( double quantity) {
         this.quantity = quantity;
@@ -80,6 +79,7 @@ public class ClothesItem extends Item {
         String returnString = this.getName() + " " + this.getBrand() + "\n" +
                 this.quantity+ " x $" + this.price + " = $" + total(quantity, price);
         String finalString = returnString +"\n";
+
         if (this.discount != 0) {
             String discountString = "\n" +
                     "#discount " + ((int)(discountCounter *100)) + "% -$"+ this.discount;

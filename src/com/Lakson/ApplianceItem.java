@@ -1,8 +1,5 @@
 package com.Lakson;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 
 public class ApplianceItem extends Item {
@@ -36,7 +33,8 @@ public class ApplianceItem extends Item {
     public double getPrice() {
         return price;
     }
-
+    /*
+    // we do not need getters for Model, ProductionDate and Weight, otherwise we would use these.
     public String getModel() {
         return model;
     }
@@ -47,7 +45,7 @@ public class ApplianceItem extends Item {
 
     public double getWeight() {
         return weight;
-    }
+    }*/
 
     public void addQuantity ( double quantity) {
         this.quantity = quantity;
